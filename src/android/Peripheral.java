@@ -115,7 +115,6 @@ public class Peripheral extends BluetoothGattCallback {
         connecting = false;
 
         if (gatt != null) {
-            gatt.disconnect();
             gatt.close();
             gatt = null;
         }
